@@ -208,12 +208,18 @@ document.addEventListener('DOMContentLoaded', function () {
             return response.json();
         })
         .then(data => {
+            // Debugging the response to see what data is available
+            console.log(data);
+
             // Update the page with the server's data
             serverName.textContent = data.guild.name;
-            serverImage.src = data.guild.icon 
-                ? `https://cdn.discordapp.com/icons/${data.guild.id}/${data.guild.icon}.png` 
-                : 'default-image-url'; // Provide a default image URL if needed
-            serverInfo.textContent = `Server has ${data.approximate_member_count} members`; // Approximate member count
+            serverImage.src = data.guild.icon
+                ? `https://cdn.discordapp.com/icons/${data.guild.id}/${data.guild.icon}.png`
+                : 'default-image-url';  // Provide a default image URL if needed
+
+            // Check if approximate_member_count is available
+            const memberCount = data.approximate_member_count ? data.approximate_member_count : 'N/A';
+            serverInfo.textContent = `Server has ${memberCount} members`; // Display member count
         })
         .catch(error => {
             console.error('Error fetching server info:', error);
