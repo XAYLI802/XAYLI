@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
     const textElement = document.querySelector('#typing-text');
     const texts = [
-        "XAYLI IS ON TOP", 
         "MADE BY XAYLI802", 
-        "X...A...Y...L...I", 
+        "🌐XAYLI ON TOP🌐", 
+        "HTML & CSS & JAVASCRIPT🔨", 
         "FOLLOW ME ON GITHUB🌐", 
-        "JAVASCRIPT IS ON TOP!", 
+        "🗣️LIFE IS ROBLOX", 
         "🌐..🔨..💬..👁️..🔒", 
         "FREE & BETTER 🔨"
     ];
@@ -136,12 +136,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const textElement = document.querySelector('.loading-text');
     const texts = [
         "CLICK ME👻", 
-        "MADE BY XAYLI802", 
-        "X.A.Y.L.I🌐🔨", 
+        "🌐XAYLI ON TOP🌐", 
+        "HTML & CSS & JAVASCRIPT🔨", 
         "FOLLOW ME ON GITHUB🌐", 
-        "FREE & BETTER 🔨", 
+        "🗣️LIFE IS ROBLOX", 
         "🌐..🔨..💬..👁️..🔒", 
-        "CLICK ME👻"
+        "FREE & BETTER 🔨"
     ];
 
     let textIndex = 0;
