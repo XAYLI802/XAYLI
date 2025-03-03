@@ -187,3 +187,40 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+// discord server data
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const serverImage = document.getElementById('server-image');
+    const serverName = document.getElementById('server-name');
+    const serverInfo = document.getElementById('server-info');
+
+    const inviteLink = 'https://discord.gg/uZycxUKcUD';  // Replace with your invite link
+
+    function fetchServerInfo() {
+        const inviteCode = inviteLink.split('/').pop(); // Extract the invite code from the URL
+
+        fetch(`https://discord.com/api/v10/invites/${inviteCode}`)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Failed to fetch server info');
+            }
+            return response.json();
+        })
+        .then(data => {
+            // Update the page with the server's data
+            serverName.textContent = data.guild.name;
+            serverImage.src = data.guild.icon 
+                ? `https://cdn.discordapp.com/icons/${data.guild.id}/${data.guild.icon}.png` 
+                : 'default-image-url'; // Provide a default image URL if needed
+            serverInfo.textContent = `Server has ${data.approximate_member_count} members`; // Approximate member count
+        })
+        .catch(error => {
+            console.error('Error fetching server info:', error);
+            serverName.textContent = 'Failed to load server info';
+            serverInfo.textContent = 'Please try again later.';
+        });
+    }
+
+    fetchServerInfo();  // Fetch the server info when the page loads
+});
