@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 body {
-background-position: 0px 0px;
-background-attachment: fixed;
     background: linear-gradient(135deg, #1a0731, #000);
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -188,12 +186,14 @@ background-attachment: fixed;
 
 /* Fullscreen video background */
 #bg-video {
+background-position: 0px 0px;
+background-attachment: fixed;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures the video always fills the screen */
+    width: 105%;
+    height: 105%;
+    object-fit: 105%; /* Ensures the video always fills the screen */
     z-index: -1;
 }
 
