@@ -186,6 +186,7 @@ background-attachment: fixed;
 
 /* Fullscreen video background */
 #bg-video {
+    background: linear-gradient(135deg, #1a0731, #000);
     position: fixed;
     top: 0;
     left: 0;
