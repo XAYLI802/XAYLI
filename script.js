@@ -187,13 +187,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-// discord server data
-
-
 document.addEventListener('DOMContentLoaded', function () {
     const serverImage = document.getElementById('server-image');
     const serverName = document.getElementById('server-name');
     const serverInfo = document.getElementById('server-info');
+    const serverDescription = document.getElementById('server-description'); // New element for description
 
     const inviteLink = 'https://discord.gg/uZycxUKcUD';  // Replace with your invite link
 
@@ -208,8 +206,8 @@ document.addEventListener('DOMContentLoaded', function () {
             return response.json();
         })
         .then(data => {
-            // Debugging: Log the full response data to check its structure
-            console.log('Full response:', data);
+            // Debugging: Log the full response to the console to inspect data structure
+            console.log(data);
 
             // Update the page with the server's data
             serverName.textContent = data.guild.name;
@@ -217,19 +215,18 @@ document.addEventListener('DOMContentLoaded', function () {
                 ? `https://cdn.discordapp.com/icons/${data.guild.id}/${data.guild.icon}.png`
                 : 'default-image-url';  // Provide a default image URL if needed
 
-            // Check the actual structure of the response for the member count
-            const memberCount = data.approximate_member_count 
-                ? data.approximate_member_count 
-                : data.guild.member_count 
-                ? data.guild.member_count 
-                : 'N/A';  // Fallback to N/A if no member count is available
+            // Display the server description, fallback to a default if unavailable
+            serverDescription.textContent = data.guild.description
+                ? data.guild.description
+                : 'No description available for this server.';  // Fallback message if no description is available
 
-            serverInfo.textContent = `Server has ${memberCount} members`; // Display member count
+            serverInfo.textContent = `Join via the channel: ${data.channel.name}`; // Display channel name
         })
         .catch(error => {
             console.error('Error fetching server info:', error);
             serverName.textContent = 'Failed to load server info';
             serverInfo.textContent = 'Please try again later.';
+            serverDescription.textContent = 'No description available.';
         });
     }
 
