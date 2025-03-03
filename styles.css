@@ -194,8 +194,6 @@ font-size: 25px;
 
 
 .discord img {
-
-width: 60px; /* Ensure uniform size */
-
-
+    width: 80px; /* Adjust the width to your desired size */
+    height: auto; /* Maintains aspect ratio */
 }
