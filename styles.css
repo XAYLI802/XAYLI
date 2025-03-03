@@ -85,6 +85,16 @@ font-size: 35px;
 }
 
 
+.album-cover {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Maintain square shape */
+    border-radius: 10px; /* Slightly rounded corners */
+    display: block; /* Ensures proper spacing */
+    margin: 0 auto 10px; /* Centers image and adds bottom margin */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Soft glow effect */
+}
+
+
 /* Loading Screen */
 .loading-screen {
     position: fixed;
