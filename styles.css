@@ -65,7 +65,7 @@ body {
   margin-top: 20px;
     background: rgba(0, 0, 0, 0.6);
     border-radius: 15px;
-    padding: 100px;
+    padding: 100%;
     box-shadow: 0 0 5px rgba(90, 0, 214, 0.5),  
               0 0 10px rgba(120, 30, 230, 0.3); /* Subtle neon glow */
   transition: 0.3s ease-in-out;
