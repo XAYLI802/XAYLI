@@ -308,17 +308,18 @@ class Particle {
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
-  canvas.style("position", "fixed");
-  canvas.style("top", "0");
-  canvas.style("left", "0");
-  canvas.style("z-index", "-1");
+  let cnv = createCanvas(windowWidth, windowHeight);
+  cnv.position(0, 0);  // Make sure the canvas is positioned correctly
+  cnv.style("z-index", "-1");  // Ensure it's behind other elements
+  cnv.style("position", "fixed");  // Fix it to the background
+  cnv.style("top", "0");
+  cnv.style("left", "0");
+
   for (let i = 0; i < opt.particles; i++) {
     Particles.push(new Particle(Math.random() * width, Math.random() * height));
   }
   strokeWeight(opt.strokeWeight);
 }
-
 function draw() {
   time++;
   background(0, 100 - opt.tail);
