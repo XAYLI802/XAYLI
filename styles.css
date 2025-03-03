@@ -172,6 +172,7 @@ font-size: 25px;
 
 
 .social-icons {
+gap: 30px; /* Space between icons */
     text-align: center;
 }
 
@@ -183,7 +184,7 @@ font-size: 25px;
 }
 
 .social-icons a img {
-    gap: 20px; /* Space between icons */
+    
     width: 40px; /* Adjust size if needed */
     height: auto;
     filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
