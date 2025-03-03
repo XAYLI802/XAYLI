@@ -193,10 +193,9 @@ font-size: 25px;
 }
 
 
-.discord img {
+.discord a img {
 
 width: 60px; /* Ensure uniform size */
-    height: 60px;
 
 
 }
