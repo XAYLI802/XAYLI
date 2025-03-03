@@ -166,3 +166,38 @@ font-size: 25px;
     object-fit: cover; /* Ensures the video always fills the screen */
     z-index: -1;
 }
+
+
+/* social links icons */
+
+
+.social-icons {
+    text-align: center;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icons img {
+    width: 40px; /* Adjust size if needed */
+    height: auto;
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
+    transition: filter 0.3s ease-in-out;
+}
+
+.social-icons a:hover img {
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 1));
+}
+
+.social-icons a:hover {
+    color: #00ffcc; /* Optional hover color */
+}
