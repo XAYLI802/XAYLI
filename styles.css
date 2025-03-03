@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 body {
+background-attachment: fixed;
     background: linear-gradient(135deg, #1a0731, #000);
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -151,6 +152,7 @@ font-size: 25px;
 
 /* Loading Screen */
 .loading-screen {
+background-attachment: fixed;
     position: fixed;
     top: 0;
     left: 0;
