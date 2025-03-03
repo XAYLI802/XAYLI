@@ -38,6 +38,20 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Music Player
+
+
+document.getElementById("volumeToggle").addEventListener("click", function () {
+    let audio = document.getElementById("audio");
+    if (audio.muted) {
+        audio.muted = false;
+        this.textContent = "🔊";
+    } else {
+        audio.muted = true;
+        this.textContent = "🔇";
+    }
+});
+
+
 const audio = document.getElementById("audio");
 const playPauseBtn = document.getElementById("playPause");
 const seekBar = document.getElementById("seekBar");
