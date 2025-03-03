@@ -13,12 +13,12 @@ body {
 
 
 .badges {
-font-size: 20px;
+font-size: 23px;
     background: rgba(0, 0, 0, 0.75); /* Slightly darker for better contrast */
     border-radius: 20px; /* Smoother rounded edges */
-    padding: 5px 8px; /* More balanced padding */
+    padding: 5px 6px; /* More balanced padding */
     display: flex; /* Ensures proper alignment */
-    gap: 8px; /* Space between badges */
+    gap: 15px; /* Space between badges */
     align-items: center; /* Aligns badges vertically */
     justify-content: center; /* Centers them if needed */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.15); /* Subtle outer glow */
