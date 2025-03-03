@@ -151,6 +151,11 @@ font-size: 25px;
 
 /* Loading Screen */
 .loading-screen {
+    background: linear-gradient(135deg, #1a0731, #000);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 20px;
     position: fixed;
     top: 0;
     left: 0;
