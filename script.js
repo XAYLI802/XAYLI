@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const textElement = document.querySelector('#typing-text');
     const texts = [
         "MADE BY XAYLI802", 
-        "🌐XAYLI ON TOP🌐", 
+        "🌐XAYLI IS ON TOP🌐", 
         "HTML & CSS & JAVASCRIPT🔨", 
         "FOLLOW ME ON GITHUB🌐", 
         "🗣️LIFE IS ROBLOX", 
@@ -150,7 +150,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const textElement = document.querySelector('.loading-text');
     const texts = [
         "CLICK ME👻", 
-        "🌐XAYLI ON TOP🌐", 
+        "🌐XAYLI IS ON TOP🌐", 
         "HTML & CSS & JAVASCRIPT🔨", 
         "FOLLOW ME ON GITHUB🌐", 
         "🗣️LIFE IS ROBLOX", 
@@ -308,6 +308,9 @@ class Particle {
 }
 
 function setup() {
+
+opt.particles = window.innerWidth > 1200 ? 800 : 400;
+
   let cnv = createCanvas(windowWidth, windowHeight);
   cnv.position(0, 0);  // Make sure the canvas is positioned correctly
   cnv.style("z-index", "-1");  // Ensure it's behind other elements
