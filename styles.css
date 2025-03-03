@@ -165,17 +165,15 @@ font-size: 25px;
     height: 100vh;
     overflow: hidden;
     z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Ensure the video fills the screen completely */
+/* Ensure video fills screen without black bars */
 #video-container iframe {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 120vw;  /* Slightly larger than viewport */
-    height: 67.5vw; /* Maintain 16:9 ratio (120% width) */
-    max-width: 180vh; /* Ensures full screen coverage */
-    max-height: 100vh;
-    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* Fills screen without stretching */
     pointer-events: none;
 }
