@@ -181,10 +181,11 @@ font-size: 25px;
 }
 
 .social-icons a img {
-    width: 40px; /* Adjust size if needed */
-    height: 40px; /* Ensure uniform size */
+    width: 40px; /* Ensure uniform size */
+    height: 40px;
     filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
     transition: filter 0.3s ease-in-out;
+    vertical-align: middle; /* Prevents any extra space below images */
 }
 
 .social-icons a:hover img {
