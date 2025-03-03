@@ -156,6 +156,7 @@ font-size: 25px;
 
 
 
+/* Video container styling */
 #video-container {
     position: fixed;
     top: 0;
@@ -166,8 +167,15 @@ font-size: 25px;
     z-index: -1;
 }
 
+/* Responsive Vimeo iframe */
 #video-container iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     width: 100vw;
-    height: 100vh;
+    height: 56.25vw; /* Maintain 16:9 aspect ratio */
+    max-height: 100vh;
+    max-width: 177.78vh;
+    transform: translate(-50%, -50%);
     pointer-events: none;
 }
