@@ -169,24 +169,20 @@ font-size: 25px;
 
 
 /* social links icons */
-
-
 .social-icons {
     text-align: center;
 }
 
 .social-icons a {
-gap: 30px; /* Space between icons */
     display: inline-block;
     text-decoration: none;
     position: relative;
-    font-size: 0; /* Hides text without affecting icons */
+    margin: 0 15px; /* Space between icons */
 }
 
 .social-icons a img {
-    
     width: 40px; /* Adjust size if needed */
-    height: auto;
+    height: 40px; /* Ensure uniform size */
     filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
     transition: filter 0.3s ease-in-out;
 }
