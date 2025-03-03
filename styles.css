@@ -179,6 +179,7 @@ font-size: 25px;
     display: inline-block;
     text-decoration: none;
     position: relative;
+    font-size: 0; /* Hides text without affecting icons */
 }
 
 .social-icons a img {
@@ -190,10 +191,4 @@ font-size: 25px;
 
 .social-icons a:hover img {
     filter: drop-shadow(0 0 15px rgba(255, 255, 255, 1));
-}
-
-/* Hide text while keeping accessibility */
-.social-icons a::after {
-    content: attr(alt);
-    display: none;
 }
