@@ -195,7 +195,8 @@ font-size: 25px;
 
 .discord {
 
-font-size: 50px;
+width: 50px; /* Ensure uniform size */
+    height: 50px;
 
 
 }
