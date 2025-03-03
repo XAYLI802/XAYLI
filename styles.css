@@ -186,7 +186,6 @@ background-attachment: fixed;
 
 /* Fullscreen video background */
 #bg-video {
-background-attachment: fixed;
     position: fixed;
     top: 0;
     left: 0;
