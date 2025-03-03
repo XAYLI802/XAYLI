@@ -9,6 +9,24 @@ body {
 }
 
 /* Profile Section */
+
+
+
+.badges {
+    background: rgba(0, 0, 0, 0.75); /* Slightly darker for better contrast */
+    border-radius: 20px; /* Smoother rounded edges */
+    padding: 5px 8px; /* More balanced padding */
+    display: flex; /* Ensures proper alignment */
+    gap: 5px; /* Space between badges */
+    align-items: center; /* Aligns badges vertically */
+    justify-content: center; /* Centers them if needed */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.15); /* Subtle outer glow */
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8); /* Softer text glow */
+}
+
+
+
+
 .profile-container {
     background: rgba(0, 0, 0, 0.6);
     border-radius: 15px;
@@ -125,18 +143,6 @@ font-size: 25px;
     pointer-events: none;
 }
 
-
-.badges {
-    background: rgba(0, 0, 0, 0.75); /* Slightly darker for better contrast */
-    border-radius: 8px; /* Smoother rounded edges */
-    padding: 5px 8px; /* More balanced padding */
-    display: flex; /* Ensures proper alignment */
-    gap: 5px; /* Space between badges */
-    align-items: center; /* Aligns badges vertically */
-    justify-content: center; /* Centers them if needed */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.15); /* Subtle outer glow */
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8); /* Softer text glow */
-}
 
 
 .loading-text {
