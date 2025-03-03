@@ -309,7 +309,8 @@ class Particle {
 
 function setup() {
 
-opt.particles = window.innerWidth > 1200 ? 800 : 400;
+  createCanvas(windowWidth, windowHeight);
+  frameRate(60); // Ensures smooth animation at 60 FPS
 
   let cnv = createCanvas(windowWidth, windowHeight);
   cnv.position(0, 0);  // Make sure the canvas is positioned correctly
