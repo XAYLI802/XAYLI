@@ -94,6 +94,13 @@ font-size: 35px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Soft glow effect */
 }
 
+#volumeToggle {
+font-size: 25px;
+  border: none;
+ background: black;
+ text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+}
+
 
 /* Loading Screen */
 .loading-screen {
