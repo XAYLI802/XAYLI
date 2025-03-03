@@ -176,18 +176,12 @@ font-size: 25px;
 }
 
 .social-icons a {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
+    display: inline-block;
     text-decoration: none;
-    color: white;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
+    position: relative;
 }
 
-.social-icons img {
+.social-icons a img {
     width: 40px; /* Adjust size if needed */
     height: auto;
     filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
@@ -198,6 +192,8 @@ font-size: 25px;
     filter: drop-shadow(0 0 15px rgba(255, 255, 255, 1));
 }
 
-.social-icons a:hover {
-    color: #00ffcc; /* Optional hover color */
+/* Hide text while keeping accessibility */
+.social-icons a::after {
+    content: attr(alt);
+    display: none;
 }
