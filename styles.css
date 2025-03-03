@@ -77,6 +77,14 @@ font-size: 25px;
  background: black;
  text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
 }
+
+.song-title {
+font-size: 35px;
+    font-weight: 600;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+}
+
+
 /* Loading Screen */
 .loading-screen {
     position: fixed;
