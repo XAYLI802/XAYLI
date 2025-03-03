@@ -172,11 +172,11 @@ font-size: 25px;
 
 
 .social-icons {
-gap: 30px; /* Space between icons */
     text-align: center;
 }
 
 .social-icons a {
+gap: 30px; /* Space between icons */
     display: inline-block;
     text-decoration: none;
     position: relative;
