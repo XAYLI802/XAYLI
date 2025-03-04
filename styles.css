@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 body {
+    background: url('https://i.pinimg.com/originals/63/7a/4b/637a4be189b5b5db494e66940df579e7.gif') no-repeat center center fixed;
+    background-size: cover; /* Ensures the GIF fills the screen without distortion */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Full height of the viewport */
     background: linear-gradient(135deg, #1a0731, #000);
     color: white;
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    padding: 20px;
 }
 
 /* Profile Section */
@@ -179,21 +183,6 @@ background-attachment: fixed;
     color: #ff66b2;
     font-weight: bold;
     text-shadow: 0 0 12px #ff66b2;
-}
-
-
-
-
-/* Fullscreen video background */
-
-#bg-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures the video always fills the screen without distortion */
-    z-index: -1;
 }
 
 
