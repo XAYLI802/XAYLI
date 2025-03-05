@@ -2,10 +2,10 @@
 
 body {
     background: url('https://i.imgur.com/vk2fpQc.gif') no-repeat center center fixed;
-    background-size: cover; /* Ensures the GIF fills the screen without distortion */
+    background-size: cover;
     margin: 0;
     padding: 0;
-    height: 100vh; /* Full height of the viewport */
+    height: 100vh;
     background: linear-gradient(135deg, #1a0731, #000);
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -13,24 +13,18 @@ body {
 }
 
 /* Profile Section */
-
-
-
 .badges {
-font-size: 23px;
-    background: rgba(0, 0, 0, 0.75); /* Slightly darker for better contrast */
-    border-radius: 20px; /* Smoother rounded edges */
-    padding: 5px 6px; /* More balanced padding */
-    display: flex; /* Ensures proper alignment */
-    gap: 15px; /* Space between badges */
-    align-items: center; /* Aligns badges vertically */
-    justify-content: center; /* Centers them if needed */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.15); /* Subtle outer glow */
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8); /* Softer text glow */
+    font-size: 23px;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+    padding: 5px 6px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
 }
-
-
-
 
 .profile-container {
     background: rgba(0, 0, 0, 0.6);
@@ -53,25 +47,21 @@ font-size: 23px;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
 }
 
-/* Typing Animation */
-#typing-text {
-    font-size: 1.3rem;
-    color: #ff66b2;
-    font-weight: bold;
-    text-shadow: 0 0 12px #ff66b2;
+/* Music Player */
+.album-cover {
+    width: 55px;
+    height: 55px;
+    border-radius: 12px;
+    object-fit: cover;
 }
 
 /* Server Section */
 .server-container {
-  margin-top: 20px;
     background: rgba(0, 0, 0, 0.6);
     border-radius: 15px;
     padding: 20px;
-    box-shadow: 0 0 6px rgba(106, 0, 255, 0.6),  
-              0 0 12px rgba(150, 50, 255, 0.4); /* Softer neon glow */
-  transition: 0.3s ease-in-out;
+    box-shadow: 0 0 6px rgba(106, 0, 255, 0.6), 0 0 12px rgba(150, 50, 255, 0.4);
 }
-
 
 .join-btn {
     background: #00ff99;
@@ -81,172 +71,4 @@ font-size: 23px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-}
-
-#server-name {
-
-font-size: 2.2rem;
-    font-weight: 600;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
-
-}
-
-
-#server-description {
-
-font-size: 1.3rem;
-    font-weight: 600;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
-
-}
-
-#server-info {
-
-font-size: 1rem;
-    font-weight: 600;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
-
-}
-
-
-
-/* Music Player */
-.music-container {
-  display: flex;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.8);
-  border-radius: 25px; /* More rounded edges */
-  padding: 10px 15px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-  width: 350px; /* Compact width */
-  justify-content: space-between;
-}
-
-/* Album Cover */
-.album-cover {
-  width: 55px; /* Smaller album cover */
-  height: 55px;
-  border-radius: 12px; /* Slight rounding */
-  object-fit: cover;
-}
-
-/* Music Info */
-.music-info {
-  flex-grow: 1;
-  padding: 0 10px;
-  text-align: center;
-}
-
-/* Song Title */
-.song-title {
-  font-size: 16px;
-  font-weight: bold;
-  font-family: 'Poppins', sans-serif;
-  color: white;
-  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
-  margin-bottom: 3px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-/* Controls */
-.controls {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-}
-
-/* Seek Bar */
-#seekBar {
-  width: 100px;
-  height: 3px;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 3px;
-  accent-color: white;
-}
-
-/* Time Display */
-#currentTime, #totalTime {
-  font-size: 12px;
-  color: white;
-  opacity: 0.8;
-}
-
-/* Buttons */
-.buttons {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-#playPause, #volumeToggle {
-  background: none;
-  border: none;
-  font-size: 18px;
-  color: white;
-  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
-}
-
-#volumeBar {
-  width: 50px; /* Smaller volume bar */
-  accent-color: white;
-}
-
-/* Loading Screen */
-.loading-screen {
-background-attachment: fixed;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, #1a0731, #000);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    z-index: 1000;
-    transition: opacity 0.5s ease, visibility 0.5s ease;
-}
-
-.hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
-
-
-
-.loading-text {
-    font-size: 1.3rem;
-    color: #ff66b2;
-    font-weight: bold;
-    text-shadow: 0 0 12px #ff66b2;
-}
-
-
-/* social links icons */
-.social-icons {
-    text-align: center;
-}
-
-.social-icons a {
-    display: inline-block;
-    text-decoration: none;
-    position: relative;
-    margin: 0 15px; /* Space between icons */
-}
-
-.social-icons a img {
-    width: 40px; /* Ensure uniform size */
-    height: 40px;
-    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
-    transition: filter 0.3s ease-in-out;
-    vertical-align: middle; /* Prevents any extra space below images */
-}
-
-.social-icons a:hover img {
-    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 1));
 }
