@@ -24,6 +24,7 @@ body {
 
 
 .badges {
+opacity: 0.3;
 font-size: 23px;
     background: rgba(0, 0, 0, 0.75); /* Slightly darker for better contrast */
     border-radius: 20px; /* Smoother rounded edges */
