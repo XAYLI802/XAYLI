@@ -24,7 +24,6 @@ body {
 
 
 .badges {
-opacity: 0.3;
 font-size: 23px;
     background: rgba(0, 0, 0, 0.75); /* Slightly darker for better contrast */
     border-radius: 20px; /* Smoother rounded edges */
@@ -167,6 +166,7 @@ font-size: 25px;
 
 /* Loading Screen */
 .loading-screen {
+opacity: 0.3;
 background-attachment: fixed;
     position: fixed;
     top: 0;
