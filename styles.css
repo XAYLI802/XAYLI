@@ -120,8 +120,10 @@ font-size: 1rem;
 
 /* Music Player */
 .music-container {
-margin-left-right: 20px;
-  margin-top-bottom: 50px;
+margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
     background: rgba(0, 0, 0, 0.6);
     border-radius: 20px;
     padding: 10px;
