@@ -24,9 +24,8 @@ body {
 
 
 .badges {
-background-opacity: 0.2;
 font-size: 23px;
-    background: rgba(0, 0, 0, 0.75); /* Slightly darker for better contrast */
+    background: rgba(0, 0, 0, 0.50); /* Slightly darker for better contrast */
     border-radius: 20px; /* Smoother rounded edges */
     padding: 5px 6px; /* More balanced padding */
     display: flex; /* Ensures proper alignment */
@@ -167,14 +166,13 @@ font-size: 25px;
 
 /* Loading Screen */
 .loading-screen {
-background-opacity: 0.3;
 background-attachment: fixed;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, #1a0731, #000);
+    background: linear-gradient(135deg, #1a0731, #000, 0.25);
     display: flex;
     align-items: center;
     justify-content: center;
