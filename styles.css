@@ -67,7 +67,7 @@ margin-top: 15px;
 /* Typing Animation */
 #typing-text {
     font-size: 1.3rem;
-    color: Dark-white;
+    color: Dark;
     font-weight: bold;
     text-shadow: 0 0 10px rgba(220, 220, 220, 0.9);
 }
@@ -194,9 +194,9 @@ background-attachment: fixed;
 
 .loading-text {
     font-size: 1.3rem;
-    color: #ff66b2;
+    color: white;
     font-weight: bold;
-    text-shadow: 0 0 12px #ff66b2;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
 }
 
 
