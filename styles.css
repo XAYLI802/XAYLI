@@ -73,7 +73,7 @@ box-shadow: 0 0 15px rgba(160, 160, 160, 0.6);
   margin-top: 30px;
     background: rgba(0, 0, 0, 0.6);
     border-radius: 20px;
-    padding: 15px;
+    padding: 10px;
     box-shadow: 0 0 6px rgba(106, 0, 255, 0.6),  
               0 0 12px rgba(150, 50, 255, 0.4); /* Softer neon glow */
   transition: 0.3s ease-in-out;
