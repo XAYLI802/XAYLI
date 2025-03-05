@@ -12,10 +12,7 @@
 }
 
 body {
-    background-size: cover; /* Ensures the GIF fills the screen without distortion */
-    margin: 0;
-    padding: 0;
-    height: 100vh; /* Full height of the viewport */
+   
     background: linear-gradient(135deg, #1a0731, #000);
     color: white;
     font-family: 'Poppins', sans-serif;
