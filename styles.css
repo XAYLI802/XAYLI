@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    background: url('https://i.pinimg.com/originals/63/7a/4b/637a4be189b5b5db494e66940df579e7.gif') no-repeat center center fixed;
+    background-size: cover; /* Ensures the GIF fills the screen without distortion */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Full height of the viewport */
+    background: linear-gradient(135deg, #1a0731, #000);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+/* Profile Section */
+
+
+
+.badges {
+font-size: 23px;
+    background: rgba(0, 0, 0, 0.75); /* Slightly darker for better contrast */
+    border-radius: 20px; /* Smoother rounded edges */
+    padding: 5px 6px; /* More balanced padding */
+    display: flex; /* Ensures proper alignment */
+    gap: 15px; /* Space between badges */
+    align-items: center; /* Aligns badges vertically */
+    justify-content: center; /* Centers them if needed */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.15); /* Subtle outer glow */
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8); /* Softer text glow */
+}
+
+
+
+
+.profile-container {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.profile-pic {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 15px rgba(138, 43, 226, 0.6);
+}
+
+.username {
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+}
+
+/* Typing Animation */
+#typing-text {
+    font-size: 1.3rem;
+    color: #ff66b2;
+    font-weight: bold;
+    text-shadow: 0 0 12px #ff66b2;
+}
+
+/* Server Section */
+.server-container {
+  margin-top: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 6px rgba(106, 0, 255, 0.6),  
+              0 0 12px rgba(150, 50, 255, 0.4); /* Softer neon glow */
+  transition: 0.3s ease-in-out;
+}
+
+
+.join-btn {
+    background: #00ff99;
+    color: black;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#server-name {
+
+font-size: 2.2rem;
+    font-weight: 600;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+
+}
+
+
+#server-description {
+
+font-size: 1.3rem;
+    font-weight: 600;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+
+}
+
+#server-info {
+
+font-size: 1rem;
+    font-weight: 600;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+
+}
+
+
+
+/* Music Player */
+.music-container {
+  margin-top: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(90, 0, 214, 0.5),  
+              0 0 10px rgba(120, 30, 230, 0.3); /* Subtle neon glow */
+  transition: 0.3s ease-in-out;
+}
+
+#playPause {
+font-size: 25px;
+  border: none;
+ background: none;
+ text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+}
+
+.song-title {
+font-size: 35px;
+    font-weight: 600;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+}
+
+
+.album-cover {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Maintain square shape */
+    border-radius: 10px; /* Slightly rounded corners */
+    display: block; /* Ensures proper spacing */
+    margin: 0 auto 10px; /* Centers image and adds bottom margin */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Soft glow effect */
+}
+
+#volumeToggle {
+margin-top: 5px;
+font-size: 25px;
+  border: none;
+ background: none;
+ text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+}
+
+
+/* Loading Screen */
+.loading-screen {
+background-attachment: fixed;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #1a0731, #000);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1000;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+
+
+.loading-text {
+    font-size: 1.3rem;
+    color: #ff66b2;
+    font-weight: bold;
+    text-shadow: 0 0 12px #ff66b2;
+}
+
+
+/* social links icons */
+.social-icons {
+    text-align: center;
+}
+
+.social-icons a {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    margin: 0 15px; /* Space between icons */
+}
+
+.social-icons a img {
+    width: 40px; /* Ensure uniform size */
+    height: 40px;
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
+    transition: filter 0.3s ease-in-out;
+    vertical-align: middle; /* Prevents any extra space below images */
+}
+
+.social-icons a:hover img {
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 1));
+}
