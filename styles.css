@@ -175,7 +175,7 @@ background-attachment: fixed;
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 30%, rgba(0, 0, 0, 0.9) 100%);
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 10%, rgba(0,0,0,1) 90%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -198,6 +198,39 @@ background-attachment: fixed;
     font-weight: bold;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
 }
+
+/* Animated Guardian Symbol */
+#guardian {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/6/6b/Triskelion-spiral-3.svg') no-repeat center;
+    background-size: contain;
+    filter: invert(100%) contrast(150%);
+    animation: pulse 3s infinite alternate ease-in-out;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 0.8; }
+    100% { transform: scale(1.1); opacity: 1; }
+}
+
+/* Glowing Lines */
+.glow-line {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, white, transparent);
+    top: 50%;
+    left: 0;
+    animation: scan 3s infinite linear;
+}
+
+@keyframes scan {
+    0% { top: 0%; }
+    100% { top: 100%; }
+}
+
 
 
 /* social links icons */
