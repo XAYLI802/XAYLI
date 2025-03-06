@@ -153,7 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "🌐XAYLI IS ON TOP🌐", 
         "HTML & CSS & JAVASCRIPT🔨", 
         "FOLLOW ME ON GITHUB🌐", 
-        "🗣️LIFE IS ROBLOX", 
+        "CLICK ME👻", 
         "🌐..🔨..💬..👁️..🔒", 
         "FREE & BETTER 🔨"
     ];
@@ -232,3 +232,34 @@ document.addEventListener('DOMContentLoaded', function () {
 
     fetchServerInfo();  // Fetch the server info when the page loads
 });
+
+
+
+//emojis rain 
+
+
+const emojis = ['❄️', '👻'];
+
+function createEmoji() {
+    const emoji = document.createElement('div');
+    emoji.classList.add('emoji');
+    emoji.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+    document.body.appendChild(emoji);
+
+    // Random properties
+    const startX = Math.random() * window.innerWidth;
+    const duration = Math.random() * 3 + 2; // 2s - 5s fall duration
+    const size = Math.random() * 1.5 + 1; // Random size (1x - 2.5x)
+
+    emoji.style.left = `${startX}px`;
+    emoji.style.fontSize = `${size}rem`;
+    emoji.style.animationDuration = `${duration}s`;
+
+    // Remove emoji after animation
+    setTimeout(() => {
+        emoji.remove();
+    }, duration * 1000);
+}
+
+// Create new emojis at intervals
+setInterval(createEmoji, 150); // Faster snowfall effect
