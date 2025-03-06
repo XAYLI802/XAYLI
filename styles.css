@@ -249,7 +249,7 @@ background-attachment: fixed;
 
 .emoji {
     position: absolute;
-    font-size: 2rem;
+    font-size: 1.5rem;
     user-select: none;
     pointer-events: none;
     animation: fall linear infinite;
