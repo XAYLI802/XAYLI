@@ -240,26 +240,39 @@ document.addEventListener('DOMContentLoaded', function () {
 
 const emojis = ['❄️', '👻'];
 
+// Create the keyframes animation dynamically
+const style = document.createElement('style');
+style.innerHTML = `
+    @keyframes fall {
+        to {
+            transform: translateY(110vh);
+            opacity: 0;
+        }
+    }
+`;
+document.head.appendChild(style);
+
 function createEmoji() {
     const emoji = document.createElement('div');
-    emoji.classList.add('emoji');
     emoji.innerText = emojis[Math.floor(Math.random() * emojis.length)];
     document.body.appendChild(emoji);
 
-    // Random size between 1rem and 2.5rem
+    // Random size and position
     const emojiSize = Math.random() * 1.5 + 1;
-    
-    // Prevent spawning off-screen by calculating max allowed position
-    const maxX = window.innerWidth - emojiSize * 20; // Adjusted for emoji width
-    const startX = Math.random() * maxX; // Ensures emoji always fits on screen
-    const duration = Math.random() * 3 + 2; // Fall duration (2s - 5s)
+    const maxX = window.innerWidth - emojiSize * 20; // Prevents off-screen spawning
+    const startX = Math.random() * maxX;
+    const duration = Math.random() * 3 + 2; // 2s - 5s fall duration
 
     // Apply styles directly
-    emoji.style.left = `${startX}px`;
-    emoji.style.fontSize = `${emojiSize}rem`;
-    emoji.style.position = "absolute";
-    emoji.style.top = "-10vh"; // Ensures emojis start above the viewport
-    emoji.style.animation = `fall ${duration}s linear forwards`;
+    Object.assign(emoji.style, {
+        position: "absolute",
+        top: "-10vh",
+        left: `${startX}px`,
+        fontSize: `${emojiSize}rem`,
+        pointerEvents: "none",
+        userSelect: "none",
+        animation: `fall ${duration}s linear forwards`
+    });
 
     // Remove emoji after animation
     setTimeout(() => {
