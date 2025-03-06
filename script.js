@@ -282,4 +282,4 @@ function createEmoji() {
 }
 
 // Start the effect
-setInterval(createEmoji, 200);
+setInterval(createEmoji, 150);
