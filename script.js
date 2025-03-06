@@ -251,9 +251,12 @@ function createEmoji() {
     const duration = Math.random() * 3 + 2; // 2s - 5s fall duration
     const size = Math.random() * 1.5 + 1; // Random size (1x - 2.5x)
 
+    // Apply styles directly
     emoji.style.left = `${startX}px`;
     emoji.style.fontSize = `${size}rem`;
-    emoji.style.animationDuration = `${duration}s`;
+    emoji.style.position = "absolute";
+    emoji.style.top = "-10vh"; // Ensures emojis spawn slightly above the viewport
+    emoji.style.animation = `fall ${duration}s linear infinite`;
 
     // Remove emoji after animation
     setTimeout(() => {
@@ -261,5 +264,5 @@ function createEmoji() {
     }, duration * 1000);
 }
 
-// Create new emojis at intervals
-setInterval(createEmoji, 150); // Faster snowfall effect
+// Start the effect
+setInterval(createEmoji, 200);
