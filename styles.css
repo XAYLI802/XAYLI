@@ -249,7 +249,8 @@ background-attachment: fixed;
 
 .emoji {
     position: absolute;
-    font-size: 1.5rem;
+    top: -10vh; /* Start slightly above the viewport */
+    font-size: 2rem;
     user-select: none;
     pointer-events: none;
     animation: fall linear infinite;
@@ -257,7 +258,7 @@ background-attachment: fixed;
 
 @keyframes fall {
     to {
-        transform: translateY(100vh);
+        transform: translateY(110vh); /* Falls beyond viewport */
         opacity: 0;
     }
 }
