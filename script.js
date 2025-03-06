@@ -3,11 +3,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const texts = [
         "MADE BY XAYLI802", 
         "🌐XAYLI IS ON TOP🌐", 
-        "HTML & CSS & JAVASCRIPT🔨", 
-        "FOLLOW ME ON GITHUB🌐", 
-        "🗣️LIFE IS ROBLOX", 
+        "🔨HTML & CSS & JAVASCRIPT🔨", 
+        "🌐FOLLOW ME ON GITHUB🌐", 
+        "🗂️SOURCE CODE ON MY GITHUB",
+        "🆓FREE & 100% CUSTOMISABLE", 
         "🌐..🔨..💬..👁️..🔒", 
-        "FREE & BETTER 🔨"
+        "🎉FREE & BETTER🔨"
     ];
 
     let textIndex = 0;
@@ -150,7 +151,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const textElement = document.querySelector('.loading-text');
     const texts = [
         "CLICK ME👻", 
-        "🌐XAYLI IS ON TOP🌐", 
+        "🌐MADE 100% BY XAYLI802🌐", 
         "HTML & CSS & JAVASCRIPT🔨", 
         "FOLLOW ME ON GITHUB🌐", 
         "CLICK ME👻", 
@@ -238,7 +239,7 @@ document.addEventListener('DOMContentLoaded', function () {
 //emojis rain 
 
 
-const emojis = ['❄️', '👻'];
+const emojis = ['❄️'];
 
 // Create the keyframes animation dynamically
 const style = document.createElement('style');
