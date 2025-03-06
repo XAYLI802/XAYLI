@@ -259,7 +259,7 @@ function createEmoji() {
     document.body.appendChild(emoji);
 
     // Random size and position
-    const emojiSize = Math.random() * 1.5 + 1;
+    const emojiSize = Math.random() * 1.1 + 1;
     const maxX = window.innerWidth - emojiSize * 20; // Prevents off-screen spawning
     const startX = Math.random() * maxX;
     const duration = Math.random() * 3 + 2; // 2s - 5s fall duration
@@ -282,4 +282,4 @@ function createEmoji() {
 }
 
 // Start the effect
-setInterval(createEmoji, 200);
+setInterval(createEmoji, 150);
