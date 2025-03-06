@@ -39,6 +39,7 @@ font-size: 23px;
 
 
 .profile-container {
+opacity: 0.8;
 margin-top: 15px;
     background: rgba(0, 0, 0, 0.6);
     border-radius: 15px;
