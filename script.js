@@ -2,11 +2,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const textElement = document.querySelector('#typing-text');
     const texts = [
         "MADE BY XAYLI802", 
-        "🌐XAYLI IS ON TOP🌐", 
+        "🌐XAYLI ON TOP🌐", 
         "🔨HTML & CSS & JAVASCRIPT🔨", 
         "🌐FOLLOW ME ON GITHUB🌐", 
         "🗂️SOURCE CODE ON MY GITHUB",
-        "🆓FREE & 100% CUSTOMISABLE", 
+        "🆓FREE & 100% CUSTOMIZABLE", 
         "🌐..🔨..💬..👁️..🔒", 
         "🎉FREE & BETTER🔨"
     ];
