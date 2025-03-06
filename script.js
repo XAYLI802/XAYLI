@@ -282,3 +282,31 @@ function createEmoji() {
 
 // Start the effect
 setInterval(createEmoji, 200);
+
+
+// visit counter 
+
+
+// Import Firebase
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+import { getDatabase, ref, get, set } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js";
+
+// Firebase configuration (using your database URL)
+const firebaseConfig = {
+    databaseURL: "https://visit-counter-d4064-default-rtdb.firebaseio.com/"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const db = getDatabase(app);
+const visitRef = ref(db, "visitCount");
+
+// Fetch and update visit count
+get(visitRef).then(snapshot => {
+    let visitCount = snapshot.exists() ? snapshot.val() + 1 : 1;
+    set(visitRef, visitCount);
+    document.getElementById("counter").textContent = visitCount;
+}).catch(error => {
+    console.error("Error fetching visit count:", error);
+    document.getElementById("counter").textContent = "Error";
+});
